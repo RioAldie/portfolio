@@ -5,6 +5,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import Navbar from './component/organism/navbar';
 import Banner from './component/organism/banner';
 import Hero from './component/organism/hero';
+import Head from 'next/head';
+import Skills from './component/skills';
 
 const Home: NextPage = () => {
 
@@ -17,12 +19,18 @@ const Home: NextPage = () => {
   return (
     <>
     <CssBaseline/>
+    <Head>
+      <title>rioaldie</title>
+    </Head>
     <ThemeProvider theme={DarkTheme}>
       <Box bgcolor={'background.default'} color={'white'}>
          <Navbar/>
         <Stack justifyContent="space-between" spacing={1} p={4} flexWrap={'wrap'} sx={{flexDirection:{ xs: 'column', sm: 'column', md: 'row'}}}>
         <Banner />
         <Hero />
+        </Stack>
+        <Stack justifyContent={'center'} alignItems={'center'}>
+          <Skills/>
         </Stack>
       </Box>
    
