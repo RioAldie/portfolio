@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <Stack justifyContent={'center'} alignItems={'center'}>
           <Skills/>
         </Stack>
-        <Stack >
+        <Stack justifyContent={'center'} alignItems={'center'}>
           <Project/>
         </Stack>
       </Box>

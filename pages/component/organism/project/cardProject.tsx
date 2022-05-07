@@ -35,11 +35,11 @@ export default function CardProject() {
       <CardActions>
         <MyButton size="small">
             <BookIcon/>
-            <Typography variant='body1'>View Study Case</Typography>
+            <Typography variant='body1' fontSize={14}>View Study Case</Typography>
         </MyButton>
         <MyButton size="small">
             <LinkIcon/>
-            <Typography variant='body1'>Visit Website</Typography>
+            <Typography variant='body1' fontSize={14}>Visit Website</Typography>
         </MyButton>
       </CardActions>
     </Card>
