@@ -1,11 +1,125 @@
-import { Box, Typography } from "@mui/material";
+import { PhoneAndroid, PhoneCallback } from "@mui/icons-material";
+import { Box, List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, styled, Typography } from "@mui/material";
+import Image from "next/image";
 
+const BoxStyled = styled(Box)({
+    minHeight: 700,
+    display: 'flex',
+    flexDirection: 'column'
+});
 export default function Skills(){
     return(
         <>
-        <Box flex={0.8} p={1} width={'80%'} bgcolor={'background.default'}>
-            <Typography variant="h5" fontFamily={'Roboto'}>My Skills</Typography>
-        </Box>
+        <BoxStyled flex={0.8} p={1} width={'80%'}>
+            <Box  bgcolor={'background.default'}>
+                <Image src={"/icon/kuda.svg"} width={24} height={26}></Image>
+                <Typography variant="h4" fontFamily={'Roboto'} color={'#F2F609'}>My Skills</Typography>
+            </Box>
+            <Box sx={{display: 'flex', flexDirection: {xs: 'column', md:'row'}, alignItems:{ xs: 'center' , md:'unset'}, justifyContent: 'center'}}>
+                <List
+                sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+                component="nav"
+                aria-labelledby="nested-list-subheader"
+                subheader={
+                    <ListSubheader component="div" id="nested-list-subheader">
+                    basic and vanilla
+                    </ListSubheader>
+                }
+                >
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/image/html.png"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>HTML 5</Typography>
+                </ListItemButton>
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/icon/css.svg"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>CSS 3</Typography>
+                </ListItemButton>
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/image/js-logo.png"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Javascript</Typography>
+                </ListItemButton>
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/image/node.png"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Node Js</Typography>
+                </ListItemButton>
+                </List>
+                <List
+                sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+                component="nav"
+                aria-labelledby="nested-list-subheader"
+                subheader={
+                    <ListSubheader component="div" id="nested-list-subheader">
+                     library and framework
+                    </ListSubheader>
+                }
+                >
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/icon/reactjs.svg"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>ReactJS</Typography>
+                </ListItemButton>
+               
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/icon/next.svg"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>NextJS</Typography>
+                </ListItemButton>
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/icon/tailwind.svg"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Tailwind</Typography>
+                </ListItemButton>
+                </List>
+                <List
+                sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+                component="nav"
+                aria-labelledby="nested-list-subheader"
+                subheader={
+                    <ListSubheader component="div" id="nested-list-subheader">
+                    etc
+                    </ListSubheader>
+                }
+                >
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/icon/react.svg"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>ReactJS</Typography>
+                </ListItemButton>
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/image/js-logo.png"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Javascript</Typography>
+                </ListItemButton>
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/image/html.png"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>HTML 5</Typography>
+                </ListItemButton>
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/image/node.png"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Node Js</Typography>
+                </ListItemButton>
+                </List>
+            </Box>
+            
+        </BoxStyled>
+        
         </>
     )
 }
