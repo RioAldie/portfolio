@@ -7,6 +7,7 @@ import Banner from './component/organism/banner';
 import Hero from './component/organism/hero';
 import Head from 'next/head';
 import Skills from './component/skills';
+import Project from './component/organism/project';
 
 const Home: NextPage = () => {
 
@@ -31,6 +32,9 @@ const Home: NextPage = () => {
         </Stack>
         <Stack justifyContent={'center'} alignItems={'center'}>
           <Skills/>
+        </Stack>
+        <Stack >
+          <Project/>
         </Stack>
       </Box>
    
