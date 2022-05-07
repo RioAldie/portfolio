@@ -16,7 +16,7 @@ const LogoStyled = styled(Box)({
 export default function Navbar(){
     return(
         <Box>
-        <AppBar position="static">
+        <AppBar position="fixed">
             <Toolbar>
               <LogoStyled>
                 <Avatar alt="Travis Howard" src="/image/rio.png" />

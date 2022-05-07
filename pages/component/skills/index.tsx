@@ -80,6 +80,12 @@ export default function Skills(){
                     </ListItemIcon>
                     <Typography variant="h5" sx={{ width: '150px'}}>Tailwind</Typography>
                 </ListItemButton>
+                <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
+                    <ListItemIcon>
+                    <Image src={"/icon/mui.svg"} height={60} width={60}></Image>
+                    </ListItemIcon>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Material UI</Typography>
+                </ListItemButton>
                 </List>
                 <List
                 sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
@@ -93,27 +99,27 @@ export default function Skills(){
                 >
                 <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
                     <ListItemIcon>
-                    <Image src={"/icon/react.svg"} height={60} width={60}></Image>
+                    <Image src={"/icon/github.svg"} height={60} width={60}></Image>
                     </ListItemIcon>
-                    <Typography variant="h5" sx={{ width: '150px'}}>ReactJS</Typography>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Github</Typography>
                 </ListItemButton>
                 <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
                     <ListItemIcon>
-                    <Image src={"/image/js-logo.png"} height={60} width={60}></Image>
+                    <Image src={"/icon/figma.svg"} height={60} width={60}></Image>
                     </ListItemIcon>
-                    <Typography variant="h5" sx={{ width: '150px'}}>Javascript</Typography>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Figma</Typography>
                 </ListItemButton>
                 <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
                     <ListItemIcon>
-                    <Image src={"/image/html.png"} height={60} width={60}></Image>
+                    <Image src={"/icon/sass.svg"} height={60} width={60}></Image>
                     </ListItemIcon>
-                    <Typography variant="h5" sx={{ width: '150px'}}>HTML 5</Typography>
+                    <Typography variant="h5" sx={{ width: '150px'}}>Sass</Typography>
                 </ListItemButton>
                 <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
                     <ListItemIcon>
-                    <Image src={"/image/node.png"} height={60} width={60}></Image>
+                    <Image src={"/icon/mongodb.svg"} height={60} width={60}></Image>
                     </ListItemIcon>
-                    <Typography variant="h5" sx={{ width: '150px'}}>Node Js</Typography>
+                    <Typography variant="h5" sx={{ width: '150px'}}>MongoDB</Typography>
                 </ListItemButton>
                 </List>
             </Box>
