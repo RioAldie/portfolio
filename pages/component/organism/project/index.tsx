@@ -1,6 +1,7 @@
 import { Box, styled, Typography } from "@mui/material";
 import CardProject from "./cardProject";
 import Image from "next/image";
+import ProjectItem from "../../molekuls/project-item";
 
 const BoxStyled = styled(Box)({
     minHeight: 700,
@@ -17,10 +18,8 @@ export default function Project(){
                 <Typography variant="h4" fontFamily={'Roboto'} color={'#F2F609'}>Selected Projects</Typography>
             </Box>
         <Box sx={{display: 'flex', flexDirection: {xs: 'column', md:'row'}, alignItems:{ xs: 'center' , md:'unset'}, justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
-                <CardProject/>
-                <CardProject/>
-                <CardProject/>
-                <CardProject/>
+                <ProjectItem image="project-2.png"/>
+                <ProjectItem image="project-3.jpg"/>
             </Box>
             
         </BoxStyled>
