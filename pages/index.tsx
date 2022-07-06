@@ -8,6 +8,8 @@ import Hero from './component/organism/hero';
 import Head from 'next/head';
 import Skills from './component/skills';
 import Project from './component/organism/project';
+import Skill from './component/organism/skill';
+import Footer from './component/organism/footer';
 
 const Home: NextPage = () => {
 
@@ -31,10 +33,13 @@ const Home: NextPage = () => {
         <Hero />
         </Stack>
         <Stack justifyContent={'center'} alignItems={'center'}>
-          <Skills/>
+          <Skill/>
         </Stack>
         <Stack justifyContent={'center'} alignItems={'center'}>
           <Project/>
+        </Stack>
+        <Stack>
+          <Footer/>
         </Stack>
       </Box>
    

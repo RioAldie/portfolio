@@ -1,7 +1,5 @@
 import { AppBar, Avatar, Box, CssBaseline, IconButton, Menu, MenuItem, styled, Toolbar, Typography } from '@mui/material';
-import type { NextPage } from 'next';
 import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
 
 const LogoStyled = styled(Box)({
   display: 'flex',
