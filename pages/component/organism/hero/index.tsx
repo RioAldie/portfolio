@@ -22,7 +22,7 @@ export default function Hero(){
         <BoxStyled  flex={1} p={0} justifyContent={'center'} alignItems={'center'} flexDirection={'column'}>
         <Box  width={'70%'} height={'70%'}  >
             <BoxHero>
-                <Image src={"/image/rio-fix.png"} width={'450px'} height={600}  ></Image>
+                <Image src={"/image/rio-fix.png"} width={'450px'} height={600}></Image>
             </BoxHero>
           
         </Box>
