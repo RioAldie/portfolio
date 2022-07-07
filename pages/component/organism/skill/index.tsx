@@ -24,6 +24,12 @@ const MainSkill = styled('div')(({ theme}) =>({
     flexDirection: 'row',
     height: 40
 }))
+const SkillStyled = styled(Box)({
+    display:'flex',
+    flexDirection:'row',
+    alignItems:'center',
+    marginLeft: 5
+})
 const Skill = () =>{
     const [dense, setDense] = React.useState(false);
     const [secondary, setSecondary] = React.useState(false);
@@ -38,7 +44,7 @@ const Skill = () =>{
 
                 <Grid container spacing={2} sx={{display: 'flex',minHeight: '400px',width: {sm:'100%',md: '60%'}, justifyContent: "space-around",flexWrap:'wrap'}}>
                     
-                    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center',ml: 5}}>
+                    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center',ml: 5, width:{sm:'50%'} }}>
                         <Image src={"/image/html.png"} height={40} width={40}></Image>
                        <Typography  variant="h6" sx={{marginLeft: 2}}>
                         HTML

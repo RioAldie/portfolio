@@ -24,6 +24,7 @@ const Home: NextPage = () => {
     <CssBaseline/>
     <Head>
       <title>rioaldie</title>
+      <link rel="icon" type="image/x-icon" href="/image/rio.png"></link>
     </Head>
     <ThemeProvider theme={DarkTheme}>
       <Box bgcolor={'background.default'} color={'white'}>
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
         <Hero />
         </Stack>
         <Stack justifyContent={'center'} alignItems={'center'}>
-          <Skill/>
+          <Skills/>
         </Stack>
         <Stack justifyContent={'center'} alignItems={'center'}>
           <Project/>

@@ -20,11 +20,6 @@ export default function Skills(){
                 sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
                 component="nav"
                 aria-labelledby="nested-list-subheader"
-                subheader={
-                    <ListSubheader component="div" id="nested-list-subheader">
-                    basic and vanilla
-                    </ListSubheader>
-                }
                 >
                 <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
                     <ListItemIcon>
@@ -55,11 +50,6 @@ export default function Skills(){
                 sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
                 component="nav"
                 aria-labelledby="nested-list-subheader"
-                subheader={
-                    <ListSubheader component="div" id="nested-list-subheader">
-                     library and framework
-                    </ListSubheader>
-                }
                 >
                 <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
                     <ListItemIcon>
@@ -91,11 +81,6 @@ export default function Skills(){
                 sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
                 component="nav"
                 aria-labelledby="nested-list-subheader"
-                subheader={
-                    <ListSubheader component="div" id="nested-list-subheader">
-                    etc
-                    </ListSubheader>
-                }
                 >
                 <ListItemButton sx={{ display: 'flex', justifyContent: 'space-around'}}>
                     <ListItemIcon>

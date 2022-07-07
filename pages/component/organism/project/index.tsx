@@ -12,14 +12,14 @@ const BoxStyled = styled(Box)({
 export default function Project(){
     return(
         <>
-        <BoxStyled flex={0.8} p={1} width={'80%'} >
+        <BoxStyled flex={0.8} p={1} sx={{width:{sm:'100%',md:'80%'}}} >
         <Box  bgcolor={'background.default'}>
                 <Image src={"/icon/chess-pawn.svg"} width={24} height={26}></Image>
                 <Typography variant="h4" fontFamily={'Roboto'} color={'#F2F609'}>Selected Projects</Typography>
             </Box>
         <Box sx={{display: 'flex', flexDirection: {xs: 'column', md:'row'}, alignItems:{ xs: 'center' , md:'unset'}, justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
                 <ProjectItem image="project-2.png"/>
-                <ProjectItem image="project-3.jpg"/>
+                
             </Box>
             
         </BoxStyled>

@@ -39,7 +39,7 @@ export default function Banner(){
     return(
         <>
        
-            <BoxStyled  flex={2} p={0} justifyContent={'center'} alignItems={'center'} flexDirection={'column'}>
+            <BoxStyled  flex={2} p={0} justifyContent={'center'} alignItems={'center'} flexDirection={'column'} sx={{mt: {sm: 'p40px'}}}>
                 <Box sx={{flex: {sm: 1, md: 0.7}}} maxWidth={700}>
                     <BannerText sx={{display:{xs: 'none', sm: 'block'}}} >rioaldie</BannerText>
                     <Image src={"/icon/mahkota.svg"} width={20} height={20}></Image>
