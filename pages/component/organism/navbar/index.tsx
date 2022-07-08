@@ -2,6 +2,7 @@ import { AppBar, Avatar, Box, CssBaseline, IconButton, List, ListItem, ListItemB
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
 import React from 'react';
+import MobileBar from './mobilebar';
 
 const LogoStyled = styled(Box)({
   display: 'flex',
@@ -82,11 +83,11 @@ export default function Navbar(){
                       
                     >
                       <MenuItem onClick={handleClose}>
-                      <Link href={'mailto:rioaldierwanto@email.com'}>
-                        <Typography>
-                          Email
-                        </Typography>
-                      </Link>
+                        <Link href={'mailto:rioaldierwanto@email.com'}>
+                          <Typography>
+                            Email
+                          </Typography>
+                        </Link>
                       </MenuItem>
                       <MenuItem onClick={handleClose}>
                             <Link  href={'https://wa.me/+62895702695858'} >
@@ -98,7 +99,7 @@ export default function Navbar(){
                             </Link>
                       </MenuItem>
                       <MenuItem onClick={handleClose}>
-                      <Link  href={'https://www.linkedin.com/in/rio-aldi-erwanto-44376820b/'} >
+                            <Link  href={'https://www.linkedin.com/in/rio-aldi-erwanto-44376820b/'} >
                                 <a target="_blank" rel="noopener noreferrer">
                                   <Typography>
                                     Linkedin
@@ -110,25 +111,16 @@ export default function Navbar(){
                   </ListItem>
                   <ListItem  disablePadding>
                     <ListItemButton sx={{ textAlign: 'center' }}>
-                    <Link  href={'https://github.com/RioAldie'} >
-                          <a target="_blank" rel="noopener noreferrer">
-                              <ListItemText primary={'Github'} />      
-                          </a>
-                    </Link>
-                      
+                        <Link  href={'https://github.com/RioAldie'} >
+                              <a target="_blank" rel="noopener noreferrer">
+                                  <ListItemText primary={'Github'} />      
+                              </a>
+                        </Link>
                     </ListItemButton>
                   </ListItem>
               </List>
-                <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 ,display:{sm: 'block', md:'none'}}}
-              >
-                
-                <MenuIcon />
-              </IconButton>
+              
+                <MobileBar/>
               </Box>
               
             </Toolbar>
