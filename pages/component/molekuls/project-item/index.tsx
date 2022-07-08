@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, styled } from '@mui/material';
 import BookIcon from '@mui/icons-material/Book';
+import Link from 'next/link';
 import LinkIcon from '@mui/icons-material/Link';
 
 const MyButton = styled(Button)({
@@ -14,11 +15,15 @@ const MyButton = styled(Button)({
     color: 'white'
 })
 interface ProjectItemProps{
-    image: string
+    image: string,
+    title: string,
+    body: string,
+    website: string
+    
 }
 export default function ProjectItem(props:ProjectItemProps) {
 
-    const {image} = props;
+    const {image,title,body,website} = props;
   return (
     <Card sx={{ maxWidth: '100%', marginTop: 10,border: 'none' }}>
       <CardActionArea sx={{border:'none'}}>
@@ -30,10 +35,10 @@ export default function ProjectItem(props:ProjectItemProps) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            GetMovie
+            {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-           This web was built by using React, Typescript, CSS 3, NodeJs and MongoDB
+            {body}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -42,10 +47,14 @@ export default function ProjectItem(props:ProjectItemProps) {
             <BookIcon/>
             <Typography variant='body1' fontSize={14}>View Study Case</Typography>
         </MyButton>
-        <MyButton size="small">
-            <LinkIcon/>
-            <Typography variant='body1' fontSize={14}>Visit Website</Typography>
-        </MyButton>
+        <Link href={'https://getmovie-rioaldie.vercel.app/'}>
+            <a target="_blank" rel="noopener noreferrer">
+                <MyButton size="small">
+                        <LinkIcon/>
+                        <Typography variant='body1' fontSize={14}>Visit Website</Typography>
+                </MyButton>
+            </a>
+        </Link>
       </CardActions>
     </Card>
   );
