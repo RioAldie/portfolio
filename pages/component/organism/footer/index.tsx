@@ -68,10 +68,10 @@ const Footer = () =>{
             </Box>
             <Box sx={{display:{xs:'none',sm:"block"}}}>
            
-                <Image src={"/icon/kuda.svg"} width={30} height={40} />
-                <Image src={"/icon/gift.svg"} width={99} height={110}/>
-                <Image src={"/icon/chess-pawn.svg"} width={30} height={40} />
-                <Image src={"/image/js-logo.png"} height={40} width={40}></Image>
+                <Image src={"/icon/kuda.svg"} width={30} height={40} alt=""/>
+                <Image src={"/icon/gift.svg"} width={99} height={110} alt=""/>
+                <Image src={"/icon/chess-pawn.svg"} width={30} height={40} alt=""/>
+                <Image src={"/image/js-logo.png"} height={40} width={40} alt=""></Image>
             </Box>
             
             

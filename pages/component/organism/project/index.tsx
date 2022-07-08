@@ -14,7 +14,7 @@ export default function Project(){
         <>
         <BoxStyled flex={0.8} p={1} sx={{width:{sm:'100%',md:'80%',alignItems:'center'}}} >
             <Box  bgcolor={'background.default'} id="project" sx={{width:{xs:'80%',sm: '80%'}}}>
-                <Image src={"/icon/chess-pawn.svg"} width={24} height={26}></Image>
+                <Image src={"/icon/chess-pawn.svg"} width={24} height={26} alt=""></Image>
                 <Typography variant="h4" fontFamily={'Roboto'} color={'#F2F609'}>Selected Projects</Typography>
             </Box>
         <Box sx={{display: 'flex', flexDirection: {xs: 'column', md:'row'}, alignItems:{ xs: 'center' , md:'unset'}, justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
