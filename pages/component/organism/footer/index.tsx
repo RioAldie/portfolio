@@ -32,7 +32,7 @@ const Footer = () =>{
                     <Typography variant="body2" color={'#bfbfbf'}>
                         For Bussines inquiry please send email to 
                     </Typography>
-                    <Link href={'#'}>
+                    <Link href={'mailto:rioaldierwanto@email.com'}>
                         <Typography variant={'body2'} color={'#F2F609'}  sx={{cursor:'pointer',ml:{xs:0,md:1}}}>
                          rioaldierwanto@email.com
                         </Typography>
@@ -40,13 +40,34 @@ const Footer = () =>{
                 </Box>
                 
                 <Boxicons>
-                    <GitHubIcon fontSize="small"/>
-                    <InstagramIcon fontSize="small"/>
-                    <LinkedInIcon fontSize="small"/>
-                    <WhatsAppIcon fontSize="small"/>
+                <Link  href={'https://github.com/RioAldie'} >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <GitHubIcon fontSize="small"/>
+                                </a>
+                            </Link>
+                            <Link  href={'https://www.instagram.com/rioaldie/'} >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <InstagramIcon fontSize="small"/>
+                                </a>
+                            </Link>
+                            <Link  href={'https://www.linkedin.com/in/rio-aldi-erwanto-44376820b/'} >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <LinkedInIcon fontSize="small"/>
+                                </a>
+                            </Link>   
+                            <Link  href={'https://wa.me/+62895702695858'} >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <WhatsAppIcon fontSize="small"/>
+                                </a>
+                            </Link>   
+                    
+                    
+                    
+                    
                </Boxicons>  
             </Box>
             <Box sx={{display:{xs:'none',sm:"block"}}}>
+           
                 <Image src={"/icon/kuda.svg"} width={30} height={40} />
                 <Image src={"/icon/gift.svg"} width={99} height={110}/>
                 <Image src={"/icon/chess-pawn.svg"} width={30} height={40} />

@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Link from "next/link";
 
 const BoxStyled = styled(Box)({
     minHeight: 700,
@@ -47,14 +48,37 @@ export default function Banner(){
                     <Typography variant="h3" fontFamily={"'Roboto', sans-serif"} fontWeight={'Bold'} marginTop={1}>FrontEnd Developer Who is Interested in React.</Typography>
                     <Typography variant="body1" color={'paper'} fontFamily={"'Roboto', sans-serif"} fontWeight={'Normal'} marginTop={3}>I’m from Indonesia and I have been studying Web Development Especially Javascript for more than 2 years. I’ve Learned React Lifecycle like React-Hooks, React-Router, Redux, Styled Component, Material UI, and Next JS, I've built web E-commerce with MERN stack,  Social Media Web, and Personal Portfolio website. I’ve been learning in Decoding, Buildwithangga, and Udemy for the last 2 years, and right now I am looking forward to working an internship, part-time or full-time.</Typography>
                         <ButtonStyled>
-                            <Image src={"/icon/amplop.svg"} width={108} height={47}></Image>
+                            <Link href={'mailto:rioaldierwanto@email.com'}>
+                                <a target="_blank" rel="noopener noreferrer">
+                                <Image src={"/icon/amplop.svg"} width={108} height={47}></Image>
+                                </a>
+                            </Link>
+                            
                             <Image src={"/icon/download.svg"} width={115} height={30}></Image> 
                         </ButtonStyled> 
                         <Boxicons>
-                                <GitHubIcon fontSize="large"/>
-                                <InstagramIcon fontSize="large"/>
-                                <LinkedInIcon fontSize="large"/>
-                                <WhatsAppIcon fontSize="large"/>
+                            <Link  href={'https://github.com/RioAldie'} >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <GitHubIcon fontSize="large"/>
+                                </a>
+                            </Link>
+                            <Link  href={'https://www.instagram.com/rioaldie/'} >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <InstagramIcon fontSize="large"/>
+                                </a>
+                            </Link>
+                            <Link  href={'https://www.linkedin.com/in/rio-aldi-erwanto-44376820b/'} >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <LinkedInIcon fontSize="large"/>
+                                </a>
+                            </Link>   
+                            <Link  href={'https://wa.me/+62895702695858'} >
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <WhatsAppIcon fontSize="large"/>
+                                </a>
+                            </Link>   
+                                
+                                
                             </Boxicons>
                 </Box>
                 </BoxStyled>
