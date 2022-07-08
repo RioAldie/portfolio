@@ -41,7 +41,7 @@ export default function Banner(){
         <>
        
             <BoxStyled  flex={2} p={0} justifyContent={'center'} alignItems={'center'} flexDirection={'column'} sx={{mt: {sm: 'p40px'}}}>
-                <Box sx={{flex: {sm: 1, md: 0.7}}} maxWidth={700}>
+                <Box sx={{flex: {sm: 1, md: 0.7}}} maxWidth={700} id="profile">
                     <BannerText sx={{display:{xs: 'none', sm: 'block'}}} >rioaldie</BannerText>
                     <Image src={"/icon/mahkota.svg"} width={20} height={20}></Image>
                     <Typography variant="h4" fontFamily={"'Roboto', sans-serif"} fontWeight={'Bold'} color={'#F2F609'}>Hi, Im Rio Aldi Erwanto</Typography>

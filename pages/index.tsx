@@ -16,6 +16,9 @@ const Home: NextPage = () => {
     const DarkTheme = createTheme({
       palette:{
         mode: 'dark',
+        primary:{
+          main: '#F2F609'
+        }
       },
    
   }) 

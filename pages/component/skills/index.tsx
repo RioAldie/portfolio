@@ -11,7 +11,7 @@ export default function Skills(){
     return(
         <>
         <BoxStyled flex={0.8} p={1} width={'80%'}>
-            <Box  bgcolor={'background.default'}>
+            <Box  bgcolor={'background.default'} id={'skills'}>
                 <Image src={"/icon/kuda.svg"} width={24} height={26}></Image>
                 <Typography variant="h4" fontFamily={'Roboto'} color={'#F2F609'}>My Skills</Typography>
             </Box>

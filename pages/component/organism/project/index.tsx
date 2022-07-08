@@ -13,7 +13,7 @@ export default function Project(){
     return(
         <>
         <BoxStyled flex={0.8} p={1} sx={{width:{sm:'100%',md:'80%'}}} >
-        <Box  bgcolor={'background.default'}>
+        <Box  bgcolor={'background.default'} id="project">
                 <Image src={"/icon/chess-pawn.svg"} width={24} height={26}></Image>
                 <Typography variant="h4" fontFamily={'Roboto'} color={'#F2F609'}>Selected Projects</Typography>
             </Box>
