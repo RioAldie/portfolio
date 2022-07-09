@@ -50,11 +50,15 @@ export default function Banner(){
                         <ButtonStyled>
                             <Link href={'mailto:rioaldierwanto@email.com'}>
                                 <a target="_blank" rel="noopener noreferrer">
-                                <Image src={"/icon/amplop.svg"} width={108} height={47} alt='Mail'></Image>
+                                    <Image src={"/icon/amplop.svg"} width={108} height={47} alt='Mail'></Image>
+                                </a>
+                            </Link>
+                            <Link href='https://drive.google.com/file/d/1GwU2cf74WQ2nRZX5lsxeumKtsI9p-FBX/view?usp=sharing'>
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <Image src={"/icon/download.svg"} width={115} height={30} alt=""></Image> 
                                 </a>
                             </Link>
                             
-                            <Image src={"/icon/download.svg"} width={115} height={30} alt=""></Image> 
                         </ButtonStyled> 
                         <Boxicons>
                             <Link  href={'https://github.com/RioAldie'} >
