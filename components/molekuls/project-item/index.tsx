@@ -11,27 +11,29 @@ import Link from 'next/link';
 import LinkIcon from '@mui/icons-material/Link';
 
 const MyButton = styled(Button)({
-    textTransform: 'none',
-    color: 'white'
-})
-interface ProjectItemProps{
-    image: string,
-    title: string,
-    body: string,
-    website: string
-    
+  textTransform: 'none',
+  color: 'white',
+});
+interface ProjectItemProps {
+  image: string;
+  title: string;
+  body: string;
+  website: string;
 }
-export default function ProjectItem(props:ProjectItemProps) {
-
-    const {image,title,body,website} = props;
+export default function ProjectItem(props: ProjectItemProps) {
+  const { image, title, body, website } = props;
   return (
-    <Card sx={{ maxWidth: '100%', marginTop: 10,border: 'none' }}>
-      <CardActionArea sx={{border:'none'}}>
+    <Card sx={{ maxWidth: '100%', marginTop: 10, border: 'none' }}>
+      <CardActionArea sx={{ border: 'none' }}>
         <CardMedia
           component="img"
           height="500"
           image={`/image/${image}`}
-          sx={{display: 'flex', alignItems:'center',border:'none'}}
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            border: 'none',
+          }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -44,16 +46,20 @@ export default function ProjectItem(props:ProjectItemProps) {
       </CardActionArea>
       <CardActions>
         <MyButton size="small">
-            <BookIcon/>
-            <Typography variant='body1' fontSize={14}>View Study Case</Typography>
+          <BookIcon />
+          <Typography variant="body1" fontSize={14}>
+            View Study Case
+          </Typography>
         </MyButton>
         <Link href={'https://getmovie-rioaldie.vercel.app/'}>
-            <a target="_blank" rel="noopener noreferrer">
-                <MyButton size="small">
-                        <LinkIcon/>
-                        <Typography variant='body1' fontSize={14}>Visit Website</Typography>
-                </MyButton>
-            </a>
+          <a target="_blank" rel="noopener noreferrer">
+            <MyButton size="small">
+              <LinkIcon />
+              <Typography variant="body1" fontSize={14}>
+                Visit Website
+              </Typography>
+            </MyButton>
+          </a>
         </Link>
       </CardActions>
     </Card>
